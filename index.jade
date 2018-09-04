@@ -1,0 +1,188 @@
+// Port of the awesome xetex resume template by Debarghya Das
+// Jade Template
+// Author: Ankit Sultana
+// Original Repo: https://github.com/bk2dcradle/jade-resume
+// LICENSE: GNU GPL v3
+
+doctype html
+html(lang="en")
+    head
+        title= 'Resume'
+        link(href="includes/css/style.css", rel="stylesheet")
+        // Link to the corresponding fonts
+        // Font: Raleway | https://github.com/mrkelly/lato.git
+        link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        // Font: Lato | https://github.com/softwaymedical/raleway.git
+        link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
+    body
+        #update-status
+            p.
+                Last updated on Sep 4, 2018
+        .heading
+            h1 #[span #{firstName}] #{lastName}
+            h3 #[a(href="https://sidhant-rajan.github.io" target="_blank") sidhant-rajan.github.io]
+            h3 #[a(href="mailto://sidhant.r60@gmail.com") sidhant.r60@gmail.com] | #[a(href="tel://+917070474521") +91 7070474521]
+        hr
+        .content
+            ////////////////////////
+            // Left Column begins //
+            ////////////////////////
+            .left-column
+                ///////// Begin Section: Education /////////
+                h1 Education
+                // Begin Subsection
+                h2 National Institute of Technology
+                h4 B.Tech in Computer Science
+                h4 July 2014 - June 2018
+                h4 Aggregate : 7.7 CGPA
+                p Jamshedpur, Jharkhand, India
+                // Space between two subsections
+                br
+                // Begin Subsection
+                h2 Doon Public School
+                h4 July 2012 - May 2014
+                h4 High School | Science
+                h4 12th standard: 93.2%
+                p Dhanbad, Jharkhand, India
+                br
+                // Begin Subsection
+                h2 DAV Public School
+                h4 Till April 2012
+                h4 School | Secondary School
+                h4 10th standard: 91.6%
+                p Ranchi, Jharkhand, India
+
+
+                ///////// Begin Section: Links /////////
+                h1 Links
+                // List follows
+                ul.nostyle
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}"  target="_blank") #{links[i][2]}]
+
+                ///////// Begin Section: Skills /////////
+                h1 Skills
+                // Begin Subsection
+                h2 Programming
+                // Use no-overlap if inline list overlaps with any element
+                // above it
+                h4.no-overlap Comfortable
+                // Note: Use span with li elements so the bullets can be closer
+                //       than the browser default value. Refer:
+                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
+                ul.inline
+                    - for (var i = 0; i < languagesStrong.length; i++)
+                        li
+                            span= languagesStrong[i]
+
+                .clearfix
+
+                h4.no-overlap Familiar
+                ul.inline
+                    - for (var i = 0; i < languagesFamiliar.length; i++)
+                        li
+                            span= languagesFamiliar[i]
+
+                .clearfix
+
+                h4.no-overlap Tools
+                ul.inline
+                    - for (var i = 0; i < tools.length; i++)
+                        li
+                            span= tools[i]
+
+                .clearfix
+
+                h4.no-overlap Frameworks
+                ul.inline
+                    - for (var i = 0; i < frameworks.length; i++)
+                        li
+                            span= frameworks[i]
+
+                .clearfix
+
+                h4.no-overlap Libraries
+                ul.inline
+                    - for (var i = 0; i < libraries.length; i++)
+                        li
+                            span= libraries[i]
+
+
+            ////////////////////////
+            /// Left Column ends ///
+            ////////////////////////
+
+
+            // Right Column Begins//
+            ////////////////////////
+            .right-column
+                ///////// Begin Section: Experience /////////
+                h1 Experience
+                // Begin Subsection
+                h2 DoSelect | #[span Software Engineer]
+                h3 July 2018 - Current | Bengaluru, India
+                ul
+                    li Added various features to the platform for end to end service as well as for internal use.
+                    li Providing design and optimization techniques for core app.
+                    li Created a Chrome plugin for an event.
+                    li Things I learned: Maintainability above everything, Documentation is crucial
+
+                h2 DoSelect | #[span Software Engineer Intern]
+                h3 May 2017 - July 2017 | Bengaluru, India
+                ul
+                    li Implemented trix editor service. 
+                    li Worked with micro-services based architecture.
+                    li Designed and resolved core app UI issues.
+
+                // Space between subsections, in case if they are too close
+                br
+
+                ///////// Begin Section: Projects /////////
+                h1 Projects
+
+                h2 Multi Chat App | #[span AngularJS]
+                h3 #[a(href="https://github.com/sidhant-rajan/MultiChat-App"  target="_blank") Link] | Open Source Project | FFMPEG
+
+                ul
+                    li Made using AngularJS
+                    li Can send a message to multiple chat bots.
+
+                h2 Issue Tracker | #[span AngularJS]
+                    h3 #[a(href="https://github.com/sidhant-rajan/Issue-Tracker"  target="_blank") link] | Open Source Project
+                    ul
+                        li A web-app to keep track of issues.
+                        li Implemented functions like add, edit and deleting of issues.
+
+
+                h2 Online Hostel Management System| #[span PHP/MySql]
+                h3 College Project
+                ul
+                    li Lists all the data about students present in respective hostels.
+                    li Managed by admin through an UI interface.
+                    li Various actions like penalty, fees and allotment of rooms can be done. 
+
+
+                h2 tsafindia.org |#[span PHP/MySql]
+                h3 #[a(href="https://tsafindia.org"  target="_blank") Link] | May 2017 | Manages working of Tata Steel Adventure Foundation
+                ul
+                    li Built with PHP, JavaScript, AJAX, Bootstrap
+                    li Integrated PayU payment service 
+
+
+                ///////// Begin Section: OTHERS /////////
+
+                h1 Others
+                ul
+                    li #[a(href="#") DBS Hackathon] - Among the winners of DBS Bank Hackathon.
+                    li #[a(href="#") WEB TEAM] - Member of official web team of college.
+                    li #[a(href="#") GeeksforGeeks] - Ranked 1 in coding competition held by GeeksforGeeks
+                ///////// Begin Section: INTERESTS /////////
+                h1 Interests
+                ul
+                    li Learning FOSS technologies
+                    li Watching and following football
+
+
+            ////////////////////////
+            /// Right Column Ends //
+            ////////////////////////

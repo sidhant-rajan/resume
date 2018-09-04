@@ -1,0 +1,13 @@
+{
+    "firstName": "Sidhant",
+    "lastName": "Rajan",
+    "languagesStrong": ["C/C++"],
+    "languagesFamiliar": ["Javascript", "PHP"],
+    "tools":["Git", "Vim", "VS Code"],
+    "frameworks": ["AngularJS", "Node.js"],
+    "libraries": ["Jquery"],
+    "links": [
+              ["GitHub", "https://github.com/sidhant-rajan", "sidhant-rajan"],
+              ["LinkedIn", "https://linkedin.com/in/sidhant-rajan", "sidhant-rajan"]
+            ]
+}
