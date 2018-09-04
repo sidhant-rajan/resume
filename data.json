@@ -4,7 +4,7 @@
     "languagesStrong": ["C/C++"],
     "languagesFamiliar": ["Javascript", "PHP"],
     "tools":["Git", "Vim", "VS Code"],
-    "frameworks": ["AngularJS", "Node.js"],
+    "frameworks": ["AngularJS"],
     "libraries": ["Jquery"],
     "links": [
               ["GitHub", "https://github.com/sidhant-rajan", "sidhant-rajan"],
