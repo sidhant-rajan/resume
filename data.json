@@ -3,9 +3,10 @@
     "lastName": "Rajan",
     "languagesStrong": ["C/C++"],
     "languagesFamiliar": ["Javascript", "PHP"],
-    "tools":["Git", "Vim", "VS Code"],
-    "frameworks": ["AngularJS"],
+    "tools":["Git", "Jasmine", "Gulp/Grunt", "VS Code"],
+    "frameworks": ["AngularJS", "Lodash/Underscor", "D3.js", "Bootstrap"],
     "libraries": ["Jquery"],
+    "databases": ["SQL", "MongoDB"],
     "links": [
               ["GitHub", "https://github.com/sidhant-rajan", "sidhant-rajan"],
               ["LinkedIn", "https://linkedin.com/in/sidhant-rajan", "sidhant-rajan"]
